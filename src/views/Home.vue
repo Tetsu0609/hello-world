@@ -1,18 +1,19 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img :src="imglink">
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
+export default{
+  date(){
+    return{
+      imglink:'https://images.unsplash.com/photo-1489311411631-05ba96c7944a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80' 
+    }
   }
 }
 </script>
+
+<style scoped>
+</style>
+
